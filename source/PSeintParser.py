@@ -1,4 +1,4 @@
-# Generated from PSeint.g4 by ANTLR 4.13.2
+# Generated from PSeInt.g4 by ANTLR 4.13.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -48,9 +48,9 @@ def serializedATN():
         0,0,0,111,109,1,0,0,0,8,35,44,52,71,85,96,107,109
     ]
 
-class PSeintParser ( Parser ):
+class PSeIntParser ( Parser ):
 
-    grammarFileName = "PSeint.g4"
+    grammarFileName = "PSeInt.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -138,22 +138,22 @@ class PSeintParser ( Parser ):
             self.parser = parser
 
         def encabezado(self):
-            return self.getTypedRuleContext(PSeintParser.EncabezadoContext,0)
+            return self.getTypedRuleContext(PSeIntParser.EncabezadoContext,0)
 
 
         def bloque(self):
-            return self.getTypedRuleContext(PSeintParser.BloqueContext,0)
+            return self.getTypedRuleContext(PSeIntParser.BloqueContext,0)
 
 
         def fin(self):
-            return self.getTypedRuleContext(PSeintParser.FinContext,0)
+            return self.getTypedRuleContext(PSeIntParser.FinContext,0)
 
 
         def EOF(self):
-            return self.getToken(PSeintParser.EOF, 0)
+            return self.getToken(PSeIntParser.EOF, 0)
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_prog
+            return PSeIntParser.RULE_prog
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterProg" ):
@@ -174,7 +174,7 @@ class PSeintParser ( Parser ):
 
     def prog(self):
 
-        localctx = PSeintParser.ProgContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.ProgContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_prog)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -185,7 +185,7 @@ class PSeintParser ( Parser ):
             self.state = 26
             self.fin()
             self.state = 27
-            self.match(PSeintParser.EOF)
+            self.match(PSeIntParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -203,10 +203,10 @@ class PSeintParser ( Parser ):
             self.parser = parser
 
         def IDENTIFICADOR(self):
-            return self.getToken(PSeintParser.IDENTIFICADOR, 0)
+            return self.getToken(PSeIntParser.IDENTIFICADOR, 0)
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_encabezado
+            return PSeIntParser.RULE_encabezado
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterEncabezado" ):
@@ -227,7 +227,7 @@ class PSeintParser ( Parser ):
 
     def encabezado(self):
 
-        localctx = PSeintParser.EncabezadoContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.EncabezadoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_encabezado)
         self._la = 0 # Token type
         try:
@@ -240,7 +240,7 @@ class PSeintParser ( Parser ):
                 self._errHandler.reportMatch(self)
                 self.consume()
             self.state = 30
-            self.match(PSeintParser.IDENTIFICADOR)
+            self.match(PSeIntParser.IDENTIFICADOR)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -259,13 +259,13 @@ class PSeintParser ( Parser ):
 
         def sentencia(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PSeintParser.SentenciaContext)
+                return self.getTypedRuleContexts(PSeIntParser.SentenciaContext)
             else:
-                return self.getTypedRuleContext(PSeintParser.SentenciaContext,i)
+                return self.getTypedRuleContext(PSeIntParser.SentenciaContext,i)
 
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_bloque
+            return PSeIntParser.RULE_bloque
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterBloque" ):
@@ -286,7 +286,7 @@ class PSeintParser ( Parser ):
 
     def bloque(self):
 
-        localctx = PSeintParser.BloqueContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.BloqueContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_bloque)
         self._la = 0 # Token type
         try:
@@ -319,7 +319,7 @@ class PSeintParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_fin
+            return PSeIntParser.RULE_fin
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterFin" ):
@@ -340,7 +340,7 @@ class PSeintParser ( Parser ):
 
     def fin(self):
 
-        localctx = PSeintParser.FinContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.FinContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_fin)
         self._la = 0 # Token type
         try:
@@ -369,23 +369,23 @@ class PSeintParser ( Parser ):
             self.parser = parser
 
         def declaracion(self):
-            return self.getTypedRuleContext(PSeintParser.DeclaracionContext,0)
+            return self.getTypedRuleContext(PSeIntParser.DeclaracionContext,0)
 
 
         def asignacion(self):
-            return self.getTypedRuleContext(PSeintParser.AsignacionContext,0)
+            return self.getTypedRuleContext(PSeIntParser.AsignacionContext,0)
 
 
         def lectura(self):
-            return self.getTypedRuleContext(PSeintParser.LecturaContext,0)
+            return self.getTypedRuleContext(PSeIntParser.LecturaContext,0)
 
 
         def escritura(self):
-            return self.getTypedRuleContext(PSeintParser.EscrituraContext,0)
+            return self.getTypedRuleContext(PSeIntParser.EscrituraContext,0)
 
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_sentencia
+            return PSeIntParser.RULE_sentencia
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterSentencia" ):
@@ -406,7 +406,7 @@ class PSeintParser ( Parser ):
 
     def sentencia(self):
 
-        localctx = PSeintParser.SentenciaContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.SentenciaContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_sentencia)
         try:
             self.state = 44
@@ -453,16 +453,16 @@ class PSeintParser ( Parser ):
 
         def IDENTIFICADOR(self, i:int=None):
             if i is None:
-                return self.getTokens(PSeintParser.IDENTIFICADOR)
+                return self.getTokens(PSeIntParser.IDENTIFICADOR)
             else:
-                return self.getToken(PSeintParser.IDENTIFICADOR, i)
+                return self.getToken(PSeIntParser.IDENTIFICADOR, i)
 
         def tipo(self):
-            return self.getTypedRuleContext(PSeintParser.TipoContext,0)
+            return self.getTypedRuleContext(PSeIntParser.TipoContext,0)
 
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_declaracion
+            return PSeIntParser.RULE_declaracion
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterDeclaracion" ):
@@ -483,29 +483,29 @@ class PSeintParser ( Parser ):
 
     def declaracion(self):
 
-        localctx = PSeintParser.DeclaracionContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.DeclaracionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_declaracion)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 46
-            self.match(PSeintParser.T__4)
+            self.match(PSeIntParser.T__4)
             self.state = 47
-            self.match(PSeintParser.IDENTIFICADOR)
+            self.match(PSeIntParser.IDENTIFICADOR)
             self.state = 52
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==6:
                 self.state = 48
-                self.match(PSeintParser.T__5)
+                self.match(PSeIntParser.T__5)
                 self.state = 49
-                self.match(PSeintParser.IDENTIFICADOR)
+                self.match(PSeIntParser.IDENTIFICADOR)
                 self.state = 54
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
             self.state = 55
-            self.match(PSeintParser.T__6)
+            self.match(PSeIntParser.T__6)
             self.state = 56
             self.tipo()
         except RecognitionException as re:
@@ -526,7 +526,7 @@ class PSeintParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_tipo
+            return PSeIntParser.RULE_tipo
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterTipo" ):
@@ -547,7 +547,7 @@ class PSeintParser ( Parser ):
 
     def tipo(self):
 
-        localctx = PSeintParser.TipoContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.TipoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_tipo)
         self._la = 0 # Token type
         try:
@@ -576,14 +576,14 @@ class PSeintParser ( Parser ):
             self.parser = parser
 
         def IDENTIFICADOR(self):
-            return self.getToken(PSeintParser.IDENTIFICADOR, 0)
+            return self.getToken(PSeIntParser.IDENTIFICADOR, 0)
 
         def expr(self):
-            return self.getTypedRuleContext(PSeintParser.ExprContext,0)
+            return self.getTypedRuleContext(PSeIntParser.ExprContext,0)
 
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_asignacion
+            return PSeIntParser.RULE_asignacion
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterAsignacion" ):
@@ -604,18 +604,18 @@ class PSeintParser ( Parser ):
 
     def asignacion(self):
 
-        localctx = PSeintParser.AsignacionContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.AsignacionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_asignacion)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 60
-            self.match(PSeintParser.IDENTIFICADOR)
+            self.match(PSeIntParser.IDENTIFICADOR)
             self.state = 61
-            self.match(PSeintParser.T__12)
+            self.match(PSeIntParser.T__12)
             self.state = 62
             self.expr(0)
             self.state = 63
-            self.match(PSeintParser.T__13)
+            self.match(PSeIntParser.T__13)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -634,12 +634,12 @@ class PSeintParser ( Parser ):
 
         def IDENTIFICADOR(self, i:int=None):
             if i is None:
-                return self.getTokens(PSeintParser.IDENTIFICADOR)
+                return self.getTokens(PSeIntParser.IDENTIFICADOR)
             else:
-                return self.getToken(PSeintParser.IDENTIFICADOR, i)
+                return self.getToken(PSeIntParser.IDENTIFICADOR, i)
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_lectura
+            return PSeIntParser.RULE_lectura
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterLectura" ):
@@ -660,29 +660,29 @@ class PSeintParser ( Parser ):
 
     def lectura(self):
 
-        localctx = PSeintParser.LecturaContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.LecturaContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_lectura)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 65
-            self.match(PSeintParser.T__14)
+            self.match(PSeIntParser.T__14)
             self.state = 66
-            self.match(PSeintParser.IDENTIFICADOR)
+            self.match(PSeIntParser.IDENTIFICADOR)
             self.state = 71
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==6:
                 self.state = 67
-                self.match(PSeintParser.T__5)
+                self.match(PSeIntParser.T__5)
                 self.state = 68
-                self.match(PSeintParser.IDENTIFICADOR)
+                self.match(PSeIntParser.IDENTIFICADOR)
                 self.state = 73
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
             self.state = 74
-            self.match(PSeintParser.T__13)
+            self.match(PSeIntParser.T__13)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -700,11 +700,11 @@ class PSeintParser ( Parser ):
             self.parser = parser
 
         def listaEscritura(self):
-            return self.getTypedRuleContext(PSeintParser.ListaEscrituraContext,0)
+            return self.getTypedRuleContext(PSeIntParser.ListaEscrituraContext,0)
 
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_escritura
+            return PSeIntParser.RULE_escritura
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterEscritura" ):
@@ -725,16 +725,16 @@ class PSeintParser ( Parser ):
 
     def escritura(self):
 
-        localctx = PSeintParser.EscrituraContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.EscrituraContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_escritura)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 76
-            self.match(PSeintParser.T__15)
+            self.match(PSeIntParser.T__15)
             self.state = 77
             self.listaEscritura()
             self.state = 78
-            self.match(PSeintParser.T__13)
+            self.match(PSeIntParser.T__13)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -753,13 +753,13 @@ class PSeintParser ( Parser ):
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PSeintParser.ExprContext)
+                return self.getTypedRuleContexts(PSeIntParser.ExprContext)
             else:
-                return self.getTypedRuleContext(PSeintParser.ExprContext,i)
+                return self.getTypedRuleContext(PSeIntParser.ExprContext,i)
 
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_listaEscritura
+            return PSeIntParser.RULE_listaEscritura
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterListaEscritura" ):
@@ -780,7 +780,7 @@ class PSeintParser ( Parser ):
 
     def listaEscritura(self):
 
-        localctx = PSeintParser.ListaEscrituraContext(self, self._ctx, self.state)
+        localctx = PSeIntParser.ListaEscrituraContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_listaEscritura)
         self._la = 0 # Token type
         try:
@@ -792,7 +792,7 @@ class PSeintParser ( Parser ):
             _la = self._input.LA(1)
             while _la==6:
                 self.state = 81
-                self.match(PSeintParser.T__5)
+                self.match(PSeIntParser.T__5)
                 self.state = 82
                 self.expr(0)
                 self.state = 87
@@ -817,7 +817,7 @@ class PSeintParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return PSeintParser.RULE_expr
+            return PSeIntParser.RULE_expr
 
      
         def copyFrom(self, ctx:ParserRuleContext):
@@ -826,12 +826,12 @@ class PSeintParser ( Parser ):
 
     class NumeroContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeintParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeIntParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def NUMERO(self):
-            return self.getToken(PSeintParser.NUMERO, 0)
+            return self.getToken(PSeIntParser.NUMERO, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterNumero" ):
@@ -850,12 +850,12 @@ class PSeintParser ( Parser ):
 
     class VariableContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeintParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeIntParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def IDENTIFICADOR(self):
-            return self.getToken(PSeintParser.IDENTIFICADOR, 0)
+            return self.getToken(PSeIntParser.IDENTIFICADOR, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterVariable" ):
@@ -874,15 +874,15 @@ class PSeintParser ( Parser ):
 
     class MulDivContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeintParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeIntParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PSeintParser.ExprContext)
+                return self.getTypedRuleContexts(PSeIntParser.ExprContext)
             else:
-                return self.getTypedRuleContext(PSeintParser.ExprContext,i)
+                return self.getTypedRuleContext(PSeIntParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -902,15 +902,15 @@ class PSeintParser ( Parser ):
 
     class AddSubContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeintParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeIntParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PSeintParser.ExprContext)
+                return self.getTypedRuleContexts(PSeIntParser.ExprContext)
             else:
-                return self.getTypedRuleContext(PSeintParser.ExprContext,i)
+                return self.getTypedRuleContext(PSeIntParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -930,12 +930,12 @@ class PSeintParser ( Parser ):
 
     class ParensContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeintParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeIntParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self):
-            return self.getTypedRuleContext(PSeintParser.ExprContext,0)
+            return self.getTypedRuleContext(PSeIntParser.ExprContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -955,12 +955,12 @@ class PSeintParser ( Parser ):
 
     class StringContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeintParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeIntParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def CADENA(self):
-            return self.getToken(PSeintParser.CADENA, 0)
+            return self.getToken(PSeIntParser.CADENA, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterString" ):
@@ -979,15 +979,15 @@ class PSeintParser ( Parser ):
 
     class PotenciaContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeintParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PSeIntParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(PSeintParser.ExprContext)
+                return self.getTypedRuleContexts(PSeIntParser.ExprContext)
             else:
-                return self.getTypedRuleContext(PSeintParser.ExprContext,i)
+                return self.getTypedRuleContext(PSeIntParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1009,7 +1009,7 @@ class PSeintParser ( Parser ):
     def expr(self, _p:int=0):
         _parentctx = self._ctx
         _parentState = self.state
-        localctx = PSeintParser.ExprContext(self, self._ctx, _parentState)
+        localctx = PSeIntParser.ExprContext(self, self._ctx, _parentState)
         _prevctx = localctx
         _startState = 22
         self.enterRecursionRule(localctx, 22, self.RULE_expr, _p)
@@ -1020,37 +1020,37 @@ class PSeintParser ( Parser ):
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [23]:
-                localctx = PSeintParser.ParensContext(self, localctx)
+                localctx = PSeIntParser.ParensContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
                 self.state = 89
-                self.match(PSeintParser.T__22)
+                self.match(PSeIntParser.T__22)
                 self.state = 90
                 self.expr(0)
                 self.state = 91
-                self.match(PSeintParser.T__23)
+                self.match(PSeIntParser.T__23)
                 pass
             elif token in [25]:
-                localctx = PSeintParser.NumeroContext(self, localctx)
+                localctx = PSeIntParser.NumeroContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 93
-                self.match(PSeintParser.NUMERO)
+                self.match(PSeIntParser.NUMERO)
                 pass
             elif token in [26]:
-                localctx = PSeintParser.VariableContext(self, localctx)
+                localctx = PSeIntParser.VariableContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 94
-                self.match(PSeintParser.IDENTIFICADOR)
+                self.match(PSeIntParser.IDENTIFICADOR)
                 pass
             elif token in [27]:
-                localctx = PSeintParser.StringContext(self, localctx)
+                localctx = PSeIntParser.StringContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 95
-                self.match(PSeintParser.CADENA)
+                self.match(PSeIntParser.CADENA)
                 pass
             else:
                 raise NoViableAltException(self)
@@ -1068,7 +1068,7 @@ class PSeintParser ( Parser ):
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
                     if la_ == 1:
-                        localctx = PSeintParser.MulDivContext(self, PSeintParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = PSeIntParser.MulDivContext(self, PSeIntParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 98
                         if not self.precpred(self._ctx, 7):
@@ -1086,7 +1086,7 @@ class PSeintParser ( Parser ):
                         pass
 
                     elif la_ == 2:
-                        localctx = PSeintParser.AddSubContext(self, PSeintParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = PSeIntParser.AddSubContext(self, PSeIntParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 101
                         if not self.precpred(self._ctx, 6):
@@ -1104,14 +1104,14 @@ class PSeintParser ( Parser ):
                         pass
 
                     elif la_ == 3:
-                        localctx = PSeintParser.PotenciaContext(self, PSeintParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = PSeIntParser.PotenciaContext(self, PSeIntParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 104
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
                         self.state = 105
-                        self.match(PSeintParser.T__21)
+                        self.match(PSeIntParser.T__21)
                         self.state = 106
                         self.expr(6)
                         pass

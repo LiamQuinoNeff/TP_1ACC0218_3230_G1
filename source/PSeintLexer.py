@@ -1,4 +1,4 @@
-# Generated from PSeint.g4 by ANTLR 4.13.2
+# Generated from PSeInt.g4 by ANTLR 4.13.2
 from antlr4 import *
 from io import StringIO
 import sys
@@ -94,7 +94,7 @@ def serializedATN():
         1,0,0,0,8,0,191,197,199,205,212,220,230,1,6,0,0
     ]
 
-class PSeintLexer(Lexer):
+class PSeIntLexer(Lexer):
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -149,7 +149,7 @@ class PSeintLexer(Lexer):
                   "T__20", "T__21", "T__22", "T__23", "NUMERO", "IDENTIFICADOR", 
                   "CADENA", "WS", "COMENTARIO" ]
 
-    grammarFileName = "PSeint.g4"
+    grammarFileName = "PSeInt.g4"
 
     def __init__(self, input=None, output:TextIO = sys.stdout):
         super().__init__(input, output)

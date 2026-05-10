@@ -1,7 +1,7 @@
-grammar PSeint;
+grammar PSeInt;
 
 // ============================================
-// FASE 1: Estructura básica, declaraciones y E/S
+// Estructura básica, declaraciones y E/S
 // ============================================
 
 prog: encabezado bloque fin EOF;

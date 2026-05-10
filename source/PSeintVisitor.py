@@ -1,103 +1,103 @@
-# Generated from PSeint.g4 by ANTLR 4.13.2
+# Generated from PSeInt.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
-    from .PSeintParser import PSeintParser
+    from .PSeIntParser import PSeIntParser
 else:
-    from PSeintParser import PSeintParser
+    from source.PSeIntParser import PSeIntParser
 
-# This class defines a complete generic visitor for a parse tree produced by PSeintParser.
+# This class defines a complete generic visitor for a parse tree produced by PSeIntParser.
 
-class PSeintVisitor(ParseTreeVisitor):
+class PSeIntVisitor(ParseTreeVisitor):
 
-    # Visit a parse tree produced by PSeintParser#prog.
-    def visitProg(self, ctx:PSeintParser.ProgContext):
+    # Visit a parse tree produced by PSeIntParser#prog.
+    def visitProg(self, ctx:PSeIntParser.ProgContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#encabezado.
-    def visitEncabezado(self, ctx:PSeintParser.EncabezadoContext):
+    # Visit a parse tree produced by PSeIntParser#encabezado.
+    def visitEncabezado(self, ctx:PSeIntParser.EncabezadoContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#bloque.
-    def visitBloque(self, ctx:PSeintParser.BloqueContext):
+    # Visit a parse tree produced by PSeIntParser#bloque.
+    def visitBloque(self, ctx:PSeIntParser.BloqueContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#fin.
-    def visitFin(self, ctx:PSeintParser.FinContext):
+    # Visit a parse tree produced by PSeIntParser#fin.
+    def visitFin(self, ctx:PSeIntParser.FinContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#sentencia.
-    def visitSentencia(self, ctx:PSeintParser.SentenciaContext):
+    # Visit a parse tree produced by PSeIntParser#sentencia.
+    def visitSentencia(self, ctx:PSeIntParser.SentenciaContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#declaracion.
-    def visitDeclaracion(self, ctx:PSeintParser.DeclaracionContext):
+    # Visit a parse tree produced by PSeIntParser#declaracion.
+    def visitDeclaracion(self, ctx:PSeIntParser.DeclaracionContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#tipo.
-    def visitTipo(self, ctx:PSeintParser.TipoContext):
+    # Visit a parse tree produced by PSeIntParser#tipo.
+    def visitTipo(self, ctx:PSeIntParser.TipoContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#asignacion.
-    def visitAsignacion(self, ctx:PSeintParser.AsignacionContext):
+    # Visit a parse tree produced by PSeIntParser#asignacion.
+    def visitAsignacion(self, ctx:PSeIntParser.AsignacionContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#lectura.
-    def visitLectura(self, ctx:PSeintParser.LecturaContext):
+    # Visit a parse tree produced by PSeIntParser#lectura.
+    def visitLectura(self, ctx:PSeIntParser.LecturaContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#escritura.
-    def visitEscritura(self, ctx:PSeintParser.EscrituraContext):
+    # Visit a parse tree produced by PSeIntParser#escritura.
+    def visitEscritura(self, ctx:PSeIntParser.EscrituraContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#listaEscritura.
-    def visitListaEscritura(self, ctx:PSeintParser.ListaEscrituraContext):
+    # Visit a parse tree produced by PSeIntParser#listaEscritura.
+    def visitListaEscritura(self, ctx:PSeIntParser.ListaEscrituraContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#Numero.
-    def visitNumero(self, ctx:PSeintParser.NumeroContext):
+    # Visit a parse tree produced by PSeIntParser#Numero.
+    def visitNumero(self, ctx:PSeIntParser.NumeroContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#Variable.
-    def visitVariable(self, ctx:PSeintParser.VariableContext):
+    # Visit a parse tree produced by PSeIntParser#Variable.
+    def visitVariable(self, ctx:PSeIntParser.VariableContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#MulDiv.
-    def visitMulDiv(self, ctx:PSeintParser.MulDivContext):
+    # Visit a parse tree produced by PSeIntParser#MulDiv.
+    def visitMulDiv(self, ctx:PSeIntParser.MulDivContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#AddSub.
-    def visitAddSub(self, ctx:PSeintParser.AddSubContext):
+    # Visit a parse tree produced by PSeIntParser#AddSub.
+    def visitAddSub(self, ctx:PSeIntParser.AddSubContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#Parens.
-    def visitParens(self, ctx:PSeintParser.ParensContext):
+    # Visit a parse tree produced by PSeIntParser#Parens.
+    def visitParens(self, ctx:PSeIntParser.ParensContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#String.
-    def visitString(self, ctx:PSeintParser.StringContext):
+    # Visit a parse tree produced by PSeIntParser#String.
+    def visitString(self, ctx:PSeIntParser.StringContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PSeintParser#Potencia.
-    def visitPotencia(self, ctx:PSeintParser.PotenciaContext):
+    # Visit a parse tree produced by PSeIntParser#Potencia.
+    def visitPotencia(self, ctx:PSeIntParser.PotenciaContext):
         return self.visitChildren(ctx)
 
 
 
-del PSeintParser
+del PSeIntParser
