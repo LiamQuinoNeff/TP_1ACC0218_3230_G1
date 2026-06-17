@@ -1,4 +1,4 @@
-# TP_1ACC0218_3230_G1
+# TF_1ACC0218_3230_G1
 
 Proyecto desarrollado para el curso de **Teoria de Compiladores (NRC: 3230)** de la **Universidad Peruana de Ciencias Aplicadas (UPC)**, a cargo del docente **Peter Jonathan Montalvo Garcia**.
 
