@@ -178,6 +178,7 @@ De acuerdo con el avance solicitado para el segundo hito, este repositorio conte
 ├── README.md
 ├── TP_1ACC0218_3230_G1.ipynb
 ├── lib/
+|    ├── antlr-4.13.2-complete.jar
 └── source/
     ├── PSeIntLexer.py
     ├── PSeIntListener.py
@@ -198,8 +199,6 @@ El proyecto se encuentra en el **Hito 2**, con un avance parcial de la implement
 Python se utiliza como backend temporal para este hito, ya que permite comprobar la traduccion de manera rapida y clara. La implementacion con **LLVM** queda pendiente para el siguiente hito.
 
 ## Proximo paso
-
-El siguiente hito del proyecto consistira en completar la implementacion del compilador, integrar el backend con **LLVM**, ejecutar el plan de validacion de forma completa, documentar los resultados obtenidos y preparar la presentacion final del proyecto.
-
 ```
+El siguiente hito del proyecto consistira en completar la implementacion del compilador, integrar el backend con **LLVM**, ejecutar el plan de validacion de forma completa, documentar los resultados obtenidos y preparar la presentacion final del proyecto.
 ```
