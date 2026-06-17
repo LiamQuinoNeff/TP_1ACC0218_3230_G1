@@ -3,7 +3,7 @@ from antlr4 import *
 if "." in __name__:
     from .PSeIntParser import PSeIntParser
 else:
-    from source.PSeIntParser import PSeIntParser
+    from PSeIntParser import PSeIntParser
 
 # This class defines a complete listener for a parse tree produced by PSeIntParser.
 class PSeIntListener(ParseTreeListener):
@@ -14,6 +14,15 @@ class PSeIntListener(ParseTreeListener):
 
     # Exit a parse tree produced by PSeIntParser#prog.
     def exitProg(self, ctx:PSeIntParser.ProgContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#principal.
+    def enterPrincipal(self, ctx:PSeIntParser.PrincipalContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#principal.
+    def exitPrincipal(self, ctx:PSeIntParser.PrincipalContext):
         pass
 
 
@@ -41,6 +50,51 @@ class PSeIntListener(ParseTreeListener):
 
     # Exit a parse tree produced by PSeIntParser#fin.
     def exitFin(self, ctx:PSeIntParser.FinContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#subprograma.
+    def enterSubprograma(self, ctx:PSeIntParser.SubprogramaContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#subprograma.
+    def exitSubprograma(self, ctx:PSeIntParser.SubprogramaContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#funcion.
+    def enterFuncion(self, ctx:PSeIntParser.FuncionContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#funcion.
+    def exitFuncion(self, ctx:PSeIntParser.FuncionContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#subproceso.
+    def enterSubproceso(self, ctx:PSeIntParser.SubprocesoContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#subproceso.
+    def exitSubproceso(self, ctx:PSeIntParser.SubprocesoContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#parametros.
+    def enterParametros(self, ctx:PSeIntParser.ParametrosContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#parametros.
+    def exitParametros(self, ctx:PSeIntParser.ParametrosContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#argumentos.
+    def enterArgumentos(self, ctx:PSeIntParser.ArgumentosContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#argumentos.
+    def exitArgumentos(self, ctx:PSeIntParser.ArgumentosContext):
         pass
 
 
@@ -107,6 +161,51 @@ class PSeIntListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by PSeIntParser#llamada.
+    def enterLlamada(self, ctx:PSeIntParser.LlamadaContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#llamada.
+    def exitLlamada(self, ctx:PSeIntParser.LlamadaContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#condicional.
+    def enterCondicional(self, ctx:PSeIntParser.CondicionalContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#condicional.
+    def exitCondicional(self, ctx:PSeIntParser.CondicionalContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#mientras.
+    def enterMientras(self, ctx:PSeIntParser.MientrasContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#mientras.
+    def exitMientras(self, ctx:PSeIntParser.MientrasContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#para.
+    def enterPara(self, ctx:PSeIntParser.ParaContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#para.
+    def exitPara(self, ctx:PSeIntParser.ParaContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#repetir.
+    def enterRepetir(self, ctx:PSeIntParser.RepetirContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#repetir.
+    def exitRepetir(self, ctx:PSeIntParser.RepetirContext):
+        pass
+
+
     # Enter a parse tree produced by PSeIntParser#Numero.
     def enterNumero(self, ctx:PSeIntParser.NumeroContext):
         pass
@@ -152,6 +251,24 @@ class PSeIntListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by PSeIntParser#OLogico.
+    def enterOLogico(self, ctx:PSeIntParser.OLogicoContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#OLogico.
+    def exitOLogico(self, ctx:PSeIntParser.OLogicoContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#Booleano.
+    def enterBooleano(self, ctx:PSeIntParser.BooleanoContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#Booleano.
+    def exitBooleano(self, ctx:PSeIntParser.BooleanoContext):
+        pass
+
+
     # Enter a parse tree produced by PSeIntParser#String.
     def enterString(self, ctx:PSeIntParser.StringContext):
         pass
@@ -161,12 +278,48 @@ class PSeIntListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by PSeIntParser#YLogico.
+    def enterYLogico(self, ctx:PSeIntParser.YLogicoContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#YLogico.
+    def exitYLogico(self, ctx:PSeIntParser.YLogicoContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#Relacional.
+    def enterRelacional(self, ctx:PSeIntParser.RelacionalContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#Relacional.
+    def exitRelacional(self, ctx:PSeIntParser.RelacionalContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#LlamadaFuncion.
+    def enterLlamadaFuncion(self, ctx:PSeIntParser.LlamadaFuncionContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#LlamadaFuncion.
+    def exitLlamadaFuncion(self, ctx:PSeIntParser.LlamadaFuncionContext):
+        pass
+
+
     # Enter a parse tree produced by PSeIntParser#Potencia.
     def enterPotencia(self, ctx:PSeIntParser.PotenciaContext):
         pass
 
     # Exit a parse tree produced by PSeIntParser#Potencia.
     def exitPotencia(self, ctx:PSeIntParser.PotenciaContext):
+        pass
+
+
+    # Enter a parse tree produced by PSeIntParser#NoLogico.
+    def enterNoLogico(self, ctx:PSeIntParser.NoLogicoContext):
+        pass
+
+    # Exit a parse tree produced by PSeIntParser#NoLogico.
+    def exitNoLogico(self, ctx:PSeIntParser.NoLogicoContext):
         pass
 
 

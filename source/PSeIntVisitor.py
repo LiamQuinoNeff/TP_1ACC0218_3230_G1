@@ -3,7 +3,7 @@ from antlr4 import *
 if "." in __name__:
     from .PSeIntParser import PSeIntParser
 else:
-    from source.PSeIntParser import PSeIntParser
+    from PSeIntParser import PSeIntParser
 
 # This class defines a complete generic visitor for a parse tree produced by PSeIntParser.
 
@@ -11,6 +11,11 @@ class PSeIntVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by PSeIntParser#prog.
     def visitProg(self, ctx:PSeIntParser.ProgContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#principal.
+    def visitPrincipal(self, ctx:PSeIntParser.PrincipalContext):
         return self.visitChildren(ctx)
 
 
@@ -26,6 +31,31 @@ class PSeIntVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by PSeIntParser#fin.
     def visitFin(self, ctx:PSeIntParser.FinContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#subprograma.
+    def visitSubprograma(self, ctx:PSeIntParser.SubprogramaContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#funcion.
+    def visitFuncion(self, ctx:PSeIntParser.FuncionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#subproceso.
+    def visitSubproceso(self, ctx:PSeIntParser.SubprocesoContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#parametros.
+    def visitParametros(self, ctx:PSeIntParser.ParametrosContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#argumentos.
+    def visitArgumentos(self, ctx:PSeIntParser.ArgumentosContext):
         return self.visitChildren(ctx)
 
 
@@ -64,6 +94,31 @@ class PSeIntVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by PSeIntParser#llamada.
+    def visitLlamada(self, ctx:PSeIntParser.LlamadaContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#condicional.
+    def visitCondicional(self, ctx:PSeIntParser.CondicionalContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#mientras.
+    def visitMientras(self, ctx:PSeIntParser.MientrasContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#para.
+    def visitPara(self, ctx:PSeIntParser.ParaContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#repetir.
+    def visitRepetir(self, ctx:PSeIntParser.RepetirContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by PSeIntParser#Numero.
     def visitNumero(self, ctx:PSeIntParser.NumeroContext):
         return self.visitChildren(ctx)
@@ -89,13 +144,43 @@ class PSeIntVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by PSeIntParser#OLogico.
+    def visitOLogico(self, ctx:PSeIntParser.OLogicoContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#Booleano.
+    def visitBooleano(self, ctx:PSeIntParser.BooleanoContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by PSeIntParser#String.
     def visitString(self, ctx:PSeIntParser.StringContext):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by PSeIntParser#YLogico.
+    def visitYLogico(self, ctx:PSeIntParser.YLogicoContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#Relacional.
+    def visitRelacional(self, ctx:PSeIntParser.RelacionalContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#LlamadaFuncion.
+    def visitLlamadaFuncion(self, ctx:PSeIntParser.LlamadaFuncionContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by PSeIntParser#Potencia.
     def visitPotencia(self, ctx:PSeIntParser.PotenciaContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PSeIntParser#NoLogico.
+    def visitNoLogico(self, ctx:PSeIntParser.NoLogicoContext):
         return self.visitChildren(ctx)
 
 
